@@ -277,26 +277,26 @@ dend.nt <- as.dendrogram (tree.ntseq)
 
 # Create a list to hold dendrograms
 # Draw the sp-aa dendrograms
-dend_list <- dendlist(dend.sp, dend.aa)
-tanglegram(dend.sp, dend.aa, 
+dend_list <- dendlist(dend.aa, dend.sp)
+tanglegram(dend.aa, dend.sp, 
            main = paste("entanglement", 
                         round(entanglement(dend_list), digits = 3), 
                         sep = "="), 
-           sub = "L: Species; R: Protein") 
+           sub = "R: Protein; L: Species") 
 
 dend_list <- dendlist(dend.sp, dend.nt)
-tanglegram(dend.sp, dend.nt, 
+tanglegram(dend.nt, dend.sp,  
            main = paste("entanglement", 
                         round(entanglement(dend_list), digits = 3), 
                         sep = "="), 
-           sub = "L: Species; R: Gene") 
+           sub = "R: Gene; L: Species") 
 
 dend_list <- dendlist(dend.aa, dend.nt)
-tanglegram(dend.aa, dend.nt, 
+tanglegram(dend.nt, dend.aa,  
            main = paste("entanglement", 
                         round(entanglement(dend_list), digits = 3), 
                         sep = "="), 
-           sub = "L: Protein; R: Gene") 
+           sub = "R: Gene; L: Protein") 
 
 # ----------------------------> Clade retention index(CRI值评估) <-----------------------------
 #install.packages("partitionComparison")
