@@ -269,20 +269,11 @@ tree.aaseq <- as.phylo(aah_cluster)
 tree.ntseq <- as.phylo(nth_cluster)
 
 # Create two dendrograms
-dend.sp <- as.dendrogram (tree.species)
-dend.aa <- as.dendrogram (tree.aaseq)
 dend.nt <- as.dendrogram (tree.ntseq)
-
-
+dend.aa <- as.dendrogram (tree.aaseq)
+dend.sp <- as.dendrogram (tree.species)
 
 # Create a list to hold dendrograms
-# Draw the sp-aa dendrograms
-dend_list <- dendlist(dend.aa, dend.sp)
-tanglegram(dend.aa, dend.sp, 
-           main = paste("entanglement", 
-                        round(entanglement(dend_list), digits = 3), 
-                        sep = "="), 
-           sub = "R: Protein; L: Species") 
 
 dend_list <- dendlist(dend.sp, dend.nt)
 tanglegram(dend.nt, dend.sp,  
@@ -290,6 +281,13 @@ tanglegram(dend.nt, dend.sp,
                         round(entanglement(dend_list), digits = 3), 
                         sep = "="), 
            sub = "R: Gene; L: Species") 
+
+dend_list <- dendlist(dend.aa, dend.sp)
+tanglegram(dend.aa, dend.sp, 
+           main = paste("entanglement", 
+                        round(entanglement(dend_list), digits = 3), 
+                        sep = "="), 
+           sub = "R: Protein; L: Species") 
 
 dend_list <- dendlist(dend.aa, dend.nt)
 tanglegram(dend.nt, dend.aa,  
