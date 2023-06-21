@@ -194,118 +194,165 @@ all.aaseq <- readRDS("./data/all.aaseq.rds")
 
 organism <- species_abbr
 
-# -----------------------------aa sequence tree ---------------------------- ###
-aa <- all.aaseq$K00858
-
-# sequence alignment
-names(aa) <- species_abbr
-library(msa)
-align.seq <- msa(aa, method = "Muscle")
-library(ggmsa)
-consv.motif <- msaConsensusSequence(align.seq,type="upperlower")
-
-AA <- msaConvert(align.seq,
-                 type = "bios2mds::align")
-library(bios2mds)
-AA <- export.fasta(AA,
-                   outfile = "./output/sequences/aaK00858.fas",
-                   ncol = 60,
-                   open = "w")
-library(seqinr)
-aa <- read.alignment("./output/sequences/aaK00858.fas", format = "fasta")
-# Computing the distance between DNA sequences.
-Da <- dist.alignment(aa)
-#UPGMA tree
-Da[is.na(Da)] <- 0
-Da[is.nan(Da)] <- 0
-sum(is.infinite(Da))  # THIS SHOULD BE 0
-# method = average is used for UPGMA
-aah_cluster <- hclust(Da, method = "average") 
-
-# -----------------------------nt sequence tree ---------------------------- ###
-
-dna <- all.ntseq$K00858
-
-# sequence alignment
-names(dna) <- species_abbr
-
-library(msa)
-align.seq <- msa(dna,
-                 method = "ClustalW")
-library(ggmsa)
-consv.motif <- msaConsensusSequence(align.seq)
-
-library(bios2mds)
-DNA <- msaConvert(align.seq,
-                  type = "bios2mds::align")
-export.fasta(DNA,
-             outfile = "./output/sequences/ntK00858.fas",
-             ncol = 60,
-             open = "w")
-#
-library(adegenet) 
-dna <- fasta2DNAbin(file = "./output/sequences/ntK00858.fas")
-
-library(ape)
-D <- dist.dna(dna, model = "TN93") #替代模型用TN93
-#UPGMA tree
-D[is.na(D)] <- 0
-D[is.nan(D)] <- 0
-sum(is.infinite(D))  # THIS SHOULD BE 0
-nth_cluster <- hclust(D, method = "average") 
-
-### 6) Obtaining the taxa tree using taxize package.
-
-### 7) Comparison between gene tree, protein tree and species tree.
-
-##------------ Dendrograms comparison ------------
-
-library(dendextend)
-library(treeio)
-library(ape)
-# load tree
-tree.species <- ape::read.nexus("./output/objects/tree16abbr.nexus")
-tree.aaseq <- as.phylo(aah_cluster)
-tree.ntseq <- as.phylo(nth_cluster)
-
-# Create two dendrograms
-dend.nt <- as.dendrogram (tree.ntseq)
-dend.aa <- as.dendrogram (tree.aaseq)
-dend.sp <- as.dendrogram (tree.species)
-
-# Create a list to hold dendrograms
-
-dend_list <- dendlist(dend.sp, dend.nt)
-tanglegram(dend.nt, dend.sp,  
-           main = paste("entanglement", 
-                        round(entanglement(dend_list), digits = 3), 
-                        sep = "="), 
-           sub = "L: Gene; R: Species") 
-
-dend_list <- dendlist(dend.aa, dend.sp)
-tanglegram(dend.aa, dend.sp, 
-           main = paste("entanglement", 
-                        round(entanglement(dend_list), digits = 3), 
-                        sep = "="), 
-           sub = "L: Protein; R: Species") 
-
-dend_list <- dendlist(dend.nt, dend.aa)
-tanglegram(dend.nt, dend.aa,  
-           main = paste("entanglement", 
-                        round(entanglement(dend_list), digits = 3), 
-                        sep = "="), 
-           sub = "L: Gene; R: Protein") 
-
-## ------------- Correlation matrix between a list dendrograms ------------- ###
-
-tree_list <- dendlist(dend.nt, dend.aa, dend.sp)
-
-cor.dendlist(tree_list, method = "cophenetic")
-cor.dendlist(tree_list, method = "baker")
-cor.dendlist(tree_list, method = "common_nodes")
 
 
 
 
+ko <- names(all.ntseq)
 
+coef.mat <- NULL
 
+for (k in ko) {
+  
+  # -----------------------------nt sequence tree ---------------------------- ###
+  
+  dna <- all.ntseq[[k]]
+  
+  # sequence alignment
+  names(dna) <- species_abbr
+  
+  library(msa)
+  align.seq <- msa(dna,
+                   method = "ClustalW")
+  library(ggmsa)
+  consv.motif <- msaConsensusSequence(align.seq)
+  
+  library(bios2mds)
+  DNA <- msaConvert(align.seq,
+                    type = "bios2mds::align")
+  export.fasta(DNA,
+               outfile = "./output/sequences/ntK00858.fas",
+               ncol = 60,
+               open = "w")
+  #
+  library(adegenet) 
+  dna <- fasta2DNAbin(file = "./output/sequences/ntK00858.fas")
+  
+  library(ape)
+  D <- dist.dna(dna, model = "TN93") #替代模型用TN93
+  #UPGMA tree
+  D[is.na(D)] <- 0
+  D[is.nan(D)] <- 0
+  sum(is.infinite(D))  # THIS SHOULD BE 0
+  nth_cluster <- hclust(D, method = "average") 
+  
+  
+  # -----------------------------aa sequence tree ---------------------------- ###
+  aa <- all.aaseq[[k]]
+  # sequence alignment
+  names(aa) <- species_abbr
+  library(msa)
+  align.seq <- msa(aa, method = "Muscle")
+  library(ggmsa)
+  consv.motif <- msaConsensusSequence(align.seq, type = "upperlower")
+  
+  AA <- msaConvert(align.seq,
+                   type = "bios2mds::align")
+  library(bios2mds)
+  AA <- export.fasta(AA,
+                     outfile = "./output/sequences/aaK00858.fas",
+                     ncol = 60,
+                     open = "w")
+  library(seqinr)
+  aa <- read.alignment("./output/sequences/aaK00858.fas", format = "fasta")
+  # Computing the distance between DNA sequences.
+  Da <- dist.alignment(aa)
+  #UPGMA tree
+  Da[is.na(Da)] <- 0
+  Da[is.nan(Da)] <- 0
+  sum(is.infinite(Da))  # THIS SHOULD BE 0
+  # method = average is used for UPGMA
+  aah_cluster <- hclust(Da, method = "average") 
+  
+  
+  ### 6) Obtaining the taxa tree using taxize package.
+  
+  ### 7) Comparison between gene tree, protein tree and species tree.
+  
+  ##------------ Dendrograms comparison ------------
+  
+  library(dendextend)
+  library(treeio)
+  library(ape)
+  # load tree
+  tree.species <- ape::read.nexus("./output/objects/tree16abbr.nexus")
+  tree.aaseq <- as.phylo(aah_cluster)
+  tree.ntseq <- as.phylo(nth_cluster)
+  
+  # Create two dendrograms
+  dend.nt <- as.dendrogram (tree.ntseq)
+  dend.aa <- as.dendrogram (tree.aaseq)
+  dend.sp <- as.dendrogram (tree.species)
+  
+  # Create a list to hold dendrograms
+  
+  dend_list <- dendlist(dend.nt, dend.sp)
+  r.g.s <- round(entanglement(dend_list), digits = 3)
+  tanglegram(dend.nt, dend.sp,  
+             main = paste("entanglement", 
+                          r.g.s, 
+                          sep = "="), 
+             sub = "L: Gene; R: Species") 
+  
+  dend_list <- dendlist(dend.aa, dend.sp)
+  r.p.s <- round(entanglement(dend_list), digits = 3)
+  tanglegram(dend.aa, dend.sp, 
+             main = paste("entanglement", 
+                          r.p.s, 
+                          sep = "="), 
+             sub = "L: Protein; R: Species") 
+  
+  dend_list <- dendlist(dend.nt, dend.aa)
+  r.g.p <- round(entanglement(dend_list), digits = 3)
+  tanglegram(dend.nt, dend.aa,  
+             main = paste("entanglement", 
+                          r.g.p, 
+                          sep = "="), 
+             sub = "L: Gene; R: Protein") 
+  
+  ## ------------- Correlation matrix between a list dendrograms ------------- ###
+  
+  ## A). Computing the entanglement coefficient between trees. 
+  
+  r.seq <- c(r.g.s, r.p.s, r.g.p)
+  
+  coef.mat <- rbind(coef.mat, r.seq)
+  
+  ## B). Computing the correlation coefficient between trees. 
+  
+  #. tree_list <- dendlist(dend.nt, dend.aa, dend.sp)
+  #. cor.dendlist(tree_list, method = "cophenetic")
+  #. cor.dendlist(tree_list, method = "baker")
+  #. cor.dendlist(tree_list, method = "common_nodes")
+  
+}
+
+rownames(coef.mat) <- ko
+colnames(coef.mat) <- c("Gene-Species", "Protein-Species", "Gene-Protein")
+coef.mat <- as.data.frame(coef.mat)
+coef.mat <- 1-coef.mat
+
+coef.mat <- as.matrix(coef.mat)
+
+saveRDS(coef.mat, file = "./output/objects/coef.mat.rds")
+
+### 8) Comparison between gene tree, protein tree and species tree.
+
+d <- dist(coef.mat)
+h <- hclust(d)
+plot(h)
+
+library(pheatmap)
+pheatmap(coef.mat)
+pheatmap(coef.mat, kmeans_k = 3)
+
+# Extracting the gene symbols. 
+gene.info <- readRDS("./data/gene.info.rds ")
+
+head(gene.info)
+
+kid <- read.delim("clipboard", header = FALSE)[, 1]
+
+kid.sym <- gene.info$gene_symbol[match(kid, gene.info$K_number)]
+
+write.csv(kid.sym, "xx.csv")
