@@ -187,10 +187,142 @@ for (r in 1:176) {
 saveRDS(all.ntseq, file = "./data/all.ntseq.rds")
 saveRDS(all.aaseq, file = "./data/all.aaseq.rds")
 
-### 5) Statistics for all genes in individual species.
+### 5) Building UPGMA tree using DNA & protein sequences for orthologs.
+
+all.ntseq <- readRDS("./data/all.ntseq.rds")
+all.aaseq <- readRDS("./data/all.aaseq.rds")
+
+organism <- species_abbr
+
+# -----------------------------aa sequence tree ---------------------------- ###
+aa <- all.aaseq$K00858
+
+# sequence alignment
+names(aa) <- species_abbr
+library(msa)
+align.seq <- msa(aa, method = "Muscle")
+library(ggmsa)
+consv.motif <- msaConsensusSequence(align.seq,type="upperlower")
+
+AA <- msaConvert(align.seq,
+                 type = "bios2mds::align")
+library(bios2mds)
+AA <- export.fasta(AA,
+                   outfile = "./output/sequences/aaK00858.fas",
+                   ncol = 60,
+                   open = "w")
+library(seqinr)
+aa <- read.alignment("./output/sequences/aaK00858.fas", format = "fasta")
+# Computing the distance between DNA sequences.
+Da <- dist.alignment(aa)
+#UPGMA tree
+Da[is.na(Da)] <- 0
+Da[is.nan(Da)] <- 0
+sum(is.infinite(Da))  # THIS SHOULD BE 0
+# method = average is used for UPGMA
+aah_cluster <- hclust(Da, method = "average") 
+
+# -----------------------------nt sequence tree ---------------------------- ###
+
+dna <- all.ntseq$K00858
+
+# sequence alignment
+names(dna) <- species_abbr
+
+library(msa)
+align.seq <- msa(dna,
+                 method = "ClustalW")
+library(ggmsa)
+consv.motif <- msaConsensusSequence(align.seq)
+
+library(bios2mds)
+DNA <- msaConvert(align.seq,
+                  type = "bios2mds::align")
+export.fasta(DNA,
+             outfile = "./output/sequences/ntK00858.fas",
+             ncol = 60,
+             open = "w")
+#
+library(adegenet) 
+dna <- fasta2DNAbin(file = "./output/sequences/ntK00858.fas")
+
+library(ape)
+D <- dist.dna(dna, model = "TN93") #替代模型用TN93
+#UPGMA tree
+D[is.na(D)] <- 0
+D[is.nan(D)] <- 0
+sum(is.infinite(D))  # THIS SHOULD BE 0
+nth_cluster <- hclust(D, method = "average") 
+
+### 6) Obtaining the taxa tree using taxize package.
+
+### 7) Obtaining the taxa tree using taxize package.
+
+##------------ Dendrograms comparison ------------
+
+library(dendextend)
+library(treeio)
+library(ape)
+# load tree
+tree.species <- ape::read.nexus("./output/objects/tree16abbr.nexus")
+tree.aaseq <- as.phylo(aah_cluster)
+tree.ntseq <- as.phylo(nth_cluster)
+
+# Create two dendrograms
+dend.sp <- as.dendrogram (tree.species)
+dend.aa <- as.dendrogram (tree.aaseq)
+dend.nt <- as.dendrogram (tree.ntseq)
 
 
 
+# Create a list to hold dendrograms
+# Draw the sp-aa dendrograms
+dend_list <- dendlist(dend.sp, dend.aa)
+tanglegram(dend.sp, dend.aa, 
+           main = paste("entanglement", 
+                        round(entanglement(dend_list), digits = 3), 
+                        sep = "="), 
+           sub = "L: Species; R: Protein") 
+
+dend_list <- dendlist(dend.sp, dend.nt)
+tanglegram(dend.sp, dend.nt, 
+           main = paste("entanglement", 
+                        round(entanglement(dend_list), digits = 3), 
+                        sep = "="), 
+           sub = "L: Species; R: Gene") 
+
+dend_list <- dendlist(dend.aa, dend.nt)
+tanglegram(dend.aa, dend.nt, 
+           main = paste("entanglement", 
+                        round(entanglement(dend_list), digits = 3), 
+                        sep = "="), 
+           sub = "L: Protein; R: Gene") 
+
+# ----------------------------> Clade retention index(CRI值评估) <-----------------------------
+#install.packages("partitionComparison")
+library(partitionComparison)
+library(ape)
+library(ggtree)
+library(treeio)    
+
+Tree1 <- as.phylo(tree.species)
+Tree2 <- as.phylo(tree.aaseq)
+Tree3 <- as.phylo(tree.ntseq)
+
+Strict <- ape::consensus(Tree1, Tree2,rooted=TRUE,check.labels = TRUE) # calculate the consensus from multiple trees
+Edges <- as.data.frame(Strict$edge) # isolates the edge data for calculating polytomies
+Edges$n <- as.numeric(ave(as.character(Edges$V1),Edges$V1, FUN = length)) # counts the number of edge values
+Clades <- subset(Edges,V2>V1 & n>2) # counts the number of resolved clades nested in polytomies 
+Count1 <- rle(sort(Edges$V1)) # transposes edge data
+Numbers <- as.data.frame(Count1$values) # puts edge data into a table 
+Numbers$count <- as.data.frame(Count1$lengths) # counts the number of edges to identify polytomies
+Subset1 <- subset(Numbers,Count1$lengths!="2") # isolates polytomous branches
+SUMP1 <- as.numeric(colSums(Subset1$count)-nrow(Clades)-Nnode(Strict)) # calculates polytomous taxa and subtracts nodes
+Taxa <- as.data.frame(Strict$tip.label) # prepares taxa for counting
+SUMP2 <- nrow(Taxa) - 1 # counts the taxa and subtracts one
+CRI <- format(0.5*( - (SUMP1/SUMP2) + 1), nsmall = 3) # completes the CRI calculation and stores the answer
+# CRI<-format(0.5*(-(SUMP1/SUMP2)+1), nsmall = 3, digits = 3) # if too many decimal spaces, use this line by removing # and insert # in front of the line above
+print(CRI)
 
 
 
