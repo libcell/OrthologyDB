@@ -136,3 +136,57 @@ table(gene_stats)
 
 ### 4) Statistics for all genes in individual species.
 
+spe <- names(Gene_list_ko)
+ko_genes <- matrix(NA, nrow = 176, ncol = 16)
+for (rw in 1:length(genes)) {
+  txt_1 <- paste("row number is", rw, sep = " ")
+  print("#####################################################################")
+  print(txt_1)
+  spe_gene <- keggGet(genes[rw])[[1]]$GENES
+  for (cl in 1:16) {
+    txt_2 <- paste("column number is", cl, sep = " ")
+    print(txt_2)
+    text <- paste0("^", toupper(spe[cl]), ":")
+    loc <- grep(text, spe_gene)
+    gs <- spe_gene[loc]
+    gs <- strsplit(gs, " ")[[1]]
+    gs <- paste0(tolower(gs[1]), gs[2])vv
+    gs <- strsplit(gs, "\\(")[[1]][1]
+    ko_genes[rw, cl] <- gs
+  }
+}
+ko_genes <- as.data.frame(ko_genes)
+
+rownames(ko_genes) <- genes
+
+colnames(ko_genes) <- names(Gene_list_ko)
+
+DT::datatable(ko_genes)
+
+library("Biostrings")
+
+all.ntseq <- as.list(rep(NA, 176))
+all.aaseq <- as.list(rep(NA, 176))
+names(all.ntseq) <- names(all.aaseq) <- genes
+
+for (r in 1:176) {
+  print(r)
+  ntseq <- DNAStringSet(NULL)
+  aaseq <- AAStringSet(NULL)
+  for (c in 1:16) {
+    xl_nt <- keggGet(as.character(ko_genes[r, c]), "ntseq")
+    xl_aa <- keggGet(as.character(ko_genes[r, c]), "aaseq")
+    ntseq <- c(ntseq, xl_nt)
+    aaseq <- c(aaseq, xl_aa)
+  }
+  all.ntseq[[r]] <- ntseq
+  all.aaseq[[r]] <- aaseq
+  Sys.sleep(5)
+}
+
+# save.image("cqnu420.RData")
+
+saveRDS(all.ntseq, file = "./data/all.ntseq.rds")
+saveRDS(all.aaseq, file = "./data/all.aaseq.rds")
+
+
