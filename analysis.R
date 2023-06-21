@@ -184,9 +184,14 @@ for (r in 1:176) {
   Sys.sleep(5)
 }
 
-# save.image("cqnu420.RData")
-
 saveRDS(all.ntseq, file = "./data/all.ntseq.rds")
 saveRDS(all.aaseq, file = "./data/all.aaseq.rds")
+
+### 5) Statistics for all genes in individual species.
+
+
+
+
+
 
 

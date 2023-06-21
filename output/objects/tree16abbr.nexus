@@ -1,0 +1,45 @@
+#NEXUS
+[R-package APE, Tue Jun 20 21:43:43 2023]
+
+BEGIN TAXA;
+	DIMENSIONS NTAX = 16;
+	TAXLABELS
+		hsa
+		mmu
+		rno
+		dme
+		ath
+		sce
+		mcc
+		cel
+		ssc
+		bta
+		gga
+		zma
+		osa
+		ece
+		gmx
+		xla
+	;
+END;
+BEGIN TREES;
+	TRANSLATE
+		1	hsa,
+		2	mmu,
+		3	rno,
+		4	dme,
+		5	ath,
+		6	sce,
+		7	mcc,
+		8	cel,
+		9	ssc,
+		10	bta,
+		11	gga,
+		12	zma,
+		13	osa,
+		14	ece,
+		15	gmx,
+		16	xla
+	;
+	TREE * UNTITLED = [&R] (14:50,(((12:2.712754518,13:2.712754518)Poaceae:11.2088605,(5:9.487865703,15:9.487865703)rosids:4.43374932)Mesangiospermae:25.57739974,(6:32.49835795,((16:19.54714283,(11:16.54686133,((9:5.828431455,10:5.828431455)Artiodactyla:5.759631294,((2:1.312623154,3:1.312623154)Murinae:6.265972507,(1:4.212895266,7:4.212895266)Catarrhini:3.365700395)Euarchontoglires:4.009467089)Boreoeutheria:4.958798582)Amniota:3.000281495)Tetrapoda:7.700722504,(4:23.04747124,8:23.04747124)Ecdysozoa:4.200394093)Bilateria:5.250492616)Opisthokonta:7.000656822)Eukaryota:10.50098523)cellular_organisms;
+END;
