@@ -355,4 +355,5 @@ kid <- read.delim("clipboard", header = FALSE)[, 1]
 
 kid.sym <- gene.info$gene_symbol[match(kid, gene.info$K_number)]
 
-write.csv(kid.sym, "xx.csv")
+### End of Step-02.
+### ------------------------------------------------------------------------ ###
