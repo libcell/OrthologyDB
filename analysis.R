@@ -63,9 +63,10 @@ names(species_gene) <- species_abbr
 names(Gene_list) <- species_abbr
 
 saveRDS(species_gene, "./data/species_gene.rds")
+
 saveRDS(Gene_list, "./data/Gene_list.rds")
 
-
+### 2) Counting the information on CDSs of 16 model organisms individuals. 
 
 
 
