@@ -68,6 +68,71 @@ saveRDS(Gene_list, "./data/Gene_list.rds")
 
 ### 3) Converting gene id to KO id for 16 model organisms. 
 
+species_gene <- readRDS("species_gene.rds")
+Gene_list <- readRDS("Gene_list.rds")
 
+Gene_list_ko <- as.list(rep(NA, 16))
 
+len <- length(Gene_list_ko) <- length(Gene_list)
+
+for (s in 1:len) {
+  
+  print("#####################################################################")
+  print(s)
+  
+  gl <- names(Gene_list[[s]])
+  
+  for (g in gl) {
+    
+    repeat {
+      query <- try(names(keggGet(g)[[1]]$ORTHOLOGY), silent = TRUE)
+      if (class(query) != "try-error") {
+        break
+      }
+    }
+    
+    Gene_list_ko[[s]] <- c(Gene_list_ko[[s]], query)
+    
+    print(query)
+    
+    # print(Gene_list_ko[[s]])
+    
+    Sys.sleep(0.01)
+    
+  }
+  
+  Gene_list_ko[[s]] <- unique(Gene_list_ko[[s]])
+  
+  Gene_list_ko[[s]] <- as.vector(na.omit(Gene_list_ko[[s]]))
+  
+  print("#####################################################################")
+  
+}
+
+names(Gene_list_ko) <- names(Gene_list)
+
+for (i in 1:16) {
+  
+  Gene_list_ko[[i]] <- unique(Gene_list_ko[[i]])
+  
+}
+
+for (i in 1:16) {
+  
+  Gene_list_ko[[i]] <- Gene_list_ko[[i]][-1]
+  
+}
+
+genes <- Reduce(intersect, Gene_list_ko)
+
+orth_16_species <- list(Geneset = Gene_list_ko, 
+                        Comgene = genes)
+
+saveRDS(orth_16_species, file = "./data/orth_16_species.rds")
+
+gene_stats <- keggList("hsa")
+
+table(gene_stats)
+
+### 4) Statistics for all genes in individual species.
 
