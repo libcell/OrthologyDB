@@ -1,0 +1,45 @@
+#NEXUS
+[R-package APE, Mon Jun 19 23:27:46 2023]
+
+BEGIN TAXA;
+	DIMENSIONS NTAX = 16;
+	TAXLABELS
+		Homo sapiens
+		Mus musculus
+		Rattus norvegicus
+		Drosophila melanogaster
+		Arabidopsis thaliana
+		Saccharomyces cerevisiae
+		Macaca mulatta
+		Caenorhabditis elegans
+		Sus scrofa
+		Bos taurus
+		Gallus gallus
+		Zea mays
+		Oryza sativa
+		Escherichia coli
+		Glycine max
+		Xenopus laevis
+	;
+END;
+BEGIN TREES;
+	TRANSLATE
+		1	Homo sapiens,
+		2	Mus musculus,
+		3	Rattus norvegicus,
+		4	Drosophila melanogaster,
+		5	Arabidopsis thaliana,
+		6	Saccharomyces cerevisiae,
+		7	Macaca mulatta,
+		8	Caenorhabditis elegans,
+		9	Sus scrofa,
+		10	Bos taurus,
+		11	Gallus gallus,
+		12	Zea mays,
+		13	Oryza sativa,
+		14	Escherichia coli,
+		15	Glycine max,
+		16	Xenopus laevis
+	;
+	TREE * UNTITLED = [&R] (14:50,(((12:2.712754518,13:2.712754518)Poaceae:11.2088605,(5:9.487865703,15:9.487865703)rosids:4.43374932)Mesangiospermae:25.57739974,(6:32.49835795,((16:19.54714283,(11:16.54686133,((9:5.828431455,10:5.828431455)Artiodactyla:5.759631294,((2:1.312623154,3:1.312623154)Murinae:6.265972507,(1:4.212895266,7:4.212895266)Catarrhini:3.365700395)Euarchontoglires:4.009467089)Boreoeutheria:4.958798582)Amniota:3.000281495)Tetrapoda:7.700722504,(4:23.04747124,8:23.04747124)Ecdysozoa:4.200394093)Bilateria:5.250492616)Opisthokonta:7.000656822)Eukaryota:10.50098523)cellular_organisms;
+END;
