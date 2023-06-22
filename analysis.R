@@ -236,8 +236,16 @@ for (k in ko) {
   sum(is.infinite(D))  # THIS SHOULD BE 0
   nth_cluster <- hclust(D, method = "average") 
   
+  g.tree.name <- paste("Gene tree constructed by DNA sequences of", 
+                       k, sep = " ")
+  g.tree.file <- paste0("./output/plots/gene_tree/Gene_tree_of_", k, ".pdf")
   
-  # -------- Construct evolution protein using DNA sequence ---------------- ###
+  pdf(g.tree.file)
+  plot(nth_cluster, main = g.tree.name)
+  dev.off()
+  
+  
+  # -------- Construct evolution protein using protein sequence ------------ ###
   
   aa <- all.aaseq[[k]]
   # sequence alignment
@@ -264,6 +272,15 @@ for (k in ko) {
   sum(is.infinite(Da))  # THIS SHOULD BE 0
   # method = average is used for UPGMA
   aah_cluster <- hclust(Da, method = "average") 
+  
+  p.tree.name <- paste("Protein tree constructed by AA sequences of", 
+                       k, sep = " ")
+  p.tree.file <- paste0("./output/plots/protein_tree/Protein_tree_of_", 
+                        k, ".pdf")
+  
+  pdf(p.tree.file)
+  plot(aah_cluster, main = p.tree.name)
+  dev.off()
   
   
   ### 6) Obtaining the taxa tree using taxize package.
@@ -295,6 +312,19 @@ for (k in ko) {
                           sep = "="), 
              sub = "L: Gene; R: Species") 
   
+  nt.tangle.sp <- paste("Tanglegram of", 
+                       k, sep = " ")
+  nt.tangle.sp.file <- paste0("./output/plots/gene_species/Tanglegram of_", 
+                        k, ".pdf")
+  
+  pdf(nt.tangle.sp.file, width = 9, height = 6)
+  tanglegram(dend.nt, dend.sp,  
+             main = paste("entanglement", 
+                          r.g.s, 
+                          sep = "="), 
+             sub = "L: Gene; R: Species") 
+  dev.off()
+  
   dend_list <- dendlist(dend.aa, dend.sp)
   r.p.s <- round(entanglement(dend_list), digits = 3)
   tanglegram(dend.aa, dend.sp, 
@@ -303,6 +333,20 @@ for (k in ko) {
                           sep = "="), 
              sub = "L: Protein; R: Species") 
   
+  aa.tangle.sp <- paste("Tanglegram of", 
+                        k, sep = " ")
+  aa.tangle.sp.file <- paste0("./output/plots/protein_species/Tanglegram of_", 
+                              k, ".pdf")
+  
+  pdf(aa.tangle.sp.file, width = 9, height = 6)
+  tanglegram(dend.aa, dend.sp, 
+             main = paste("entanglement", 
+                          r.p.s, 
+                          sep = "="), 
+             sub = "L: Protein; R: Species") 
+  dev.off()
+  
+  
   dend_list <- dendlist(dend.nt, dend.aa)
   r.g.p <- round(entanglement(dend_list), digits = 3)
   tanglegram(dend.nt, dend.aa,  
@@ -310,6 +354,19 @@ for (k in ko) {
                           r.g.p, 
                           sep = "="), 
              sub = "L: Gene; R: Protein") 
+  
+  nt.tangle.aa <- paste("Tanglegram of", 
+                        k, sep = " ")
+  nt.tangle.aa.file <- paste0("./output/plots/gene_protein/Tanglegram of_", 
+                              k, ".pdf")
+  
+  pdf(nt.tangle.aa.file, width = 9, height = 6)
+  tanglegram(dend.nt, dend.aa,  
+             main = paste("entanglement", 
+                          r.g.p, 
+                          sep = "="), 
+             sub = "L: Gene; R: Protein") 
+  dev.off()
   
   ## ------------- Correlation matrix between a list dendrograms ------------- ###
   
@@ -352,9 +409,8 @@ gene.info <- readRDS("./data/gene.info.rds ")
 
 head(gene.info)
 
-kid <- read.delim("clipboard", header = FALSE)[, 1]
-
-kid.sym <- gene.info$gene_symbol[match(kid, gene.info$K_number)]
+kid.sym <- openxlsx::read.xlsx("./data/Common_orthologs.xlsx", 
+                               sheet = "All") [, 1]
 
 ### End of Step-02.
 ### ------------------------------------------------------------------------ ###
