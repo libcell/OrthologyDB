@@ -189,13 +189,13 @@ saveRDS(all.aaseq, file = "./data/all.aaseq.rds")
 
 ### 5) Building UPGMA tree using DNA & protein sequences for orthologs.
 
+################################################################################
+### Start here!!!
+
 all.ntseq <- readRDS("./data/all.ntseq.rds")
 all.aaseq <- readRDS("./data/all.aaseq.rds")
 
 organism <- species_abbr
-
-
-
 
 
 ko <- names(all.ntseq)
@@ -204,7 +204,7 @@ coef.mat <- NULL
 
 for (k in ko) {
   
-  # -----------------------------nt sequence tree ---------------------------- ###
+  # --------- Construct evolution tree using DNA sequence ------------------ ###
   
   dna <- all.ntseq[[k]]
   
@@ -237,7 +237,8 @@ for (k in ko) {
   nth_cluster <- hclust(D, method = "average") 
   
   
-  # -----------------------------aa sequence tree ---------------------------- ###
+  # -------- Construct evolution protein using DNA sequence ---------------- ###
+  
   aa <- all.aaseq[[k]]
   # sequence alignment
   names(aa) <- species_abbr
