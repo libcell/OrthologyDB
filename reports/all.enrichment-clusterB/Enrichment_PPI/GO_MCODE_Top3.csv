@@ -1,0 +1,5 @@
+Network,Annotation
+MyList,R-HSA-5419276|Mitochondrial translation termination|-10.0;R-HSA-5368287|Mitochondrial translation|-9.8;GO:0043603|amide metabolic process|-9.2
+MyList_MCODE_ALL,GO:0006412|translation|-13.0;GO:0043043|peptide biosynthetic process|-12.7;R-HSA-5419276|Mitochondrial translation termination|-12.7
+MyList_SUB1_MCODE_1,"R-HSA-5419276|Mitochondrial translation termination|-15.3;R-HSA-5368287|Mitochondrial translation|-15.1;CORUM:320|55S ribosome, mitochondrial|-12.3"
+MyList_SUB1_MCODE_2,WP4290|Metabolic reprogramming in colon cancer|-7.6;hsa01230|Biosynthesis of amino acids|-6.8;hsa01200|Carbon metabolism|-6.3

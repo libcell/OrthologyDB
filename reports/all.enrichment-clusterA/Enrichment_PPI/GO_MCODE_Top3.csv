@@ -1,0 +1,8 @@
+Network,Annotation
+MyList,hsa01200|Carbon metabolism|-26.6;R-HSA-72766|Translation|-23.7;GO:0006091|generation of precursor metabolites and energy|-23.0
+MyList_MCODE_ALL,GO:0043604|amide biosynthetic process|-23.5;GO:0032543|mitochondrial translation|-22.7;R-HSA-72766|Translation|-22.6
+MyList_SUB1_MCODE_1,R-HSA-5368287|Mitochondrial translation|-30.5;GO:0032543|mitochondrial translation|-29.5;GO:0140053|mitochondrial gene expression|-28.1
+MyList_SUB1_MCODE_2,R-HSA-71387|Metabolism of carbohydrates|-8.0;R-HSA-379716|Cytosolic tRNA aminoacylation|-7.4;R-HSA-8982491|Glycogen metabolism|-7.3
+MyList_SUB1_MCODE_3,hsa01240|Biosynthesis of cofactors|-5.4;GO:0048872|homeostasis of number of cells|-4.6;GO:0006091|generation of precursor metabolites and energy|-4.2
+MyList_SUB1_MCODE_4,GO:0009117|nucleotide metabolic process|-9.0;GO:0006753|nucleoside phosphate metabolic process|-9.0;GO:0055086|nucleobase-containing small molecule metabolic process|-8.7
+MyList_SUB1_MCODE_5,GO:0043604|amide biosynthetic process|-5.2;GO:0043603|amide metabolic process|-4.7

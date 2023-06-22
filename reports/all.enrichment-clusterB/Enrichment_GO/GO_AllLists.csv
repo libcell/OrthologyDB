@@ -1,0 +1,65 @@
+Category,CategoryID,GO,Description,PARENT_GO,LogP,Enrichment,Z-score,#TotalGeneInLibrary,#GeneInGO,#GeneInHitList,#GeneInGOAndHitList,%InGO,STDV %InGO,GeneID,Hits,Log(q-value),GeneList
+GO Biological Processes,19,GO:0043043,peptide biosynthetic process,19_GO:0008152 metabolic process,-11,25,15,30244,418,29,10,34,8.8,3029|4141|4677|10209|28998|29088|51023|51373|92399|124995,HAGH|MARS1|NARS1|EIF1|MRPL13|MRPL15|MRPS18C|MRPS17|MRRF|MRPL10,-7.4,MyList
+GO Biological Processes,19,GO:0043603,amide metabolic process,19_GO:0008152 metabolic process,-11,16,13,30244,799,29,12,41,9.1,2571|3029|4141|4677|10209|28998|29088|51023|51373|60496|92399|124995,GAD1|HAGH|MARS1|NARS1|EIF1|MRPL13|MRPL15|MRPS18C|MRPS17|AASDHPPT|MRRF|MRPL10,-7.4,MyList
+GO Biological Processes,19,GO:0006518,peptide metabolic process,19_GO:0008152 metabolic process,-11,20,14,30244,513,29,10,34,8.8,3029|4141|4677|10209|28998|29088|51023|51373|92399|124995,HAGH|MARS1|NARS1|EIF1|MRPL13|MRPL15|MRPS18C|MRPS17|MRRF|MRPL10,-6.8,MyList
+GO Biological Processes,19,GO:0044282,small molecule catabolic process,19_GO:0008152 metabolic process,-11,27,15,30244,353,29,9,31,8.6,275|978|2571|2592|3029|5211|5315|27349|60496,AMT|CDA|GAD1|GALT|HAGH|PFKL|PKM|MCAT|AASDHPPT,-6.8,MyList
+GO Biological Processes,19,GO:0043604,amide biosynthetic process,19_GO:0008152 metabolic process,-10,19,13,30244,542,29,10,34,8.8,3029|4141|4677|10209|28998|29088|51023|51373|92399|124995,HAGH|MARS1|NARS1|EIF1|MRPL13|MRPL15|MRPS18C|MRPS17|MRRF|MRPL10,-6.7,MyList
+GO Biological Processes,19,GO:0006412,translation,19_GO:0008152 metabolic process,-10,24,14,30244,389,29,9,31,8.6,4141|4677|10209|28998|29088|51023|51373|92399|124995,MARS1|NARS1|EIF1|MRPL13|MRPL15|MRPS18C|MRPS17|MRRF|MRPL10,-6.6,MyList
+Reactome Gene Sets,6,R-HSA-5419276,Mitochondrial translation termination,,-9.7,72,21,30244,87,29,6,21,7.5,28998|29088|51023|51373|92399|124995,MRPL13|MRPL15|MRPS18C|MRPS17|MRRF|MRPL10,-6.2,MyList
+Reactome Gene Sets,6,R-HSA-72766,Translation,,-9.6,29,15,30244,292,29,8,28,8.3,4141|4677|28998|29088|51023|51373|92399|124995,MARS1|NARS1|MRPL13|MRPL15|MRPS18C|MRPS17|MRRF|MRPL10,-6.2,MyList
+Reactome Gene Sets,6,R-HSA-5368287,Mitochondrial translation,,-9.5,67,20,30244,93,29,6,21,7.5,28998|29088|51023|51373|92399|124995,MRPL13|MRPL15|MRPS18C|MRPS17|MRRF|MRPL10,-6.1,MyList
+KEGG Pathway,24,hsa01200,Carbon metabolism,,-8.9,54,18,30244,115,29,6,21,7.5,275|2821|5211|5315|6120|7086,AMT|GPI|PFKL|PKM|RPE|TKT,-5.6,MyList
+CORUM,33,CORUM:320,"55S ribosome, mitochondrial",,-8,68,18,30244,77,29,5,17,7,28998|29088|51023|51373|124995,MRPL13|MRPL15|MRPS18C|MRPS17|MRPL10,-4.7,MyList
+KEGG Pathway,24,hsa00030,Pentose phosphate pathway,,-7.7,1.4e+02,23,30244,30,29,4,14,6.4,2821|5211|6120|7086,GPI|PFKL|RPE|TKT,-4.5,MyList
+Reactome Gene Sets,6,R-HSA-5368286,Mitochondrial translation initiation,,-7.7,60,17,30244,87,29,5,17,7,28998|29088|51023|51373|124995,MRPL13|MRPL15|MRPS18C|MRPS17|MRPL10,-4.5,MyList
+Reactome Gene Sets,6,R-HSA-5389840,Mitochondrial translation elongation,,-7.7,60,17,30244,87,29,5,17,7,28998|29088|51023|51373|124995,MRPL13|MRPL15|MRPS18C|MRPS17|MRPL10,-4.5,MyList
+GO Biological Processes,19,GO:0032543,mitochondrial translation,19_GO:0008152 metabolic process,-7.2,47,15,30244,110,29,5,17,7,28998|29088|51023|51373|124995,MRPL13|MRPL15|MRPS18C|MRPS17|MRPL10,-4,MyList
+WikiPathways,27,WP4290,Metabolic reprogramming in colon cancer,,-7.1,99,20,30244,42,29,4,14,6.4,2821|5211|5315|7086,GPI|PFKL|PKM|TKT,-4,MyList
+WikiPathways,27,WP5220,Metabolic reprogramming in pancreatic cancer,,-7.1,99,20,30244,42,29,4,14,6.4,2821|5211|5315|6120,GPI|PFKL|PKM|RPE,-4,MyList
+GO Biological Processes,19,GO:0140053,mitochondrial gene expression,19_GO:0008152 metabolic process,-6.6,37,13,30244,142,29,5,17,7,28998|29088|51023|51373|124995,MRPL13|MRPL15|MRPS18C|MRPS17|MRPL10,-3.5,MyList
+Reactome Gene Sets,6,R-HSA-71387,Metabolism of carbohydrates,,-6.5,21,11,30244,297,29,6,21,7.5,2592|2821|5211|5315|6120|7086,GALT|GPI|PFKL|PKM|RPE|TKT,-3.4,MyList
+GO Biological Processes,19,GO:0032787,monocarboxylic acid metabolic process,19_GO:0008152 metabolic process,-6.4,14,9.4,30244,512,29,7,24,7.9,2571|2821|3029|5211|5315|27349|60496,GAD1|GPI|HAGH|PFKL|PKM|MCAT|AASDHPPT,-3.3,MyList
+KEGG Pathway,24,hsa03010,Ribosome,,-6.3,31,12,30244,167,29,5,17,7,28998|29088|51023|51373|124995,MRPL13|MRPL15|MRPS18C|MRPS17|MRPL10,-3.3,MyList
+KEGG Pathway,24,hsa01230,Biosynthesis of amino acids,,-6.1,56,15,30244,75,29,4,14,6.4,5211|5315|6120|7086,PFKL|PKM|RPE|TKT,-3.1,MyList
+GO Biological Processes,19,GO:0005996,monosaccharide metabolic process,19_GO:0008152 metabolic process,-6,28,11,30244,188,29,5,17,7,2592|2821|5211|5315|119391,GALT|GPI|PFKL|PKM|GSTO2,-3,MyList
+GO Biological Processes,19,GO:0051156,glucose 6-phosphate metabolic process,19_GO:0008152 metabolic process,-5.9,1.4e+02,21,30244,22,29,3,10,5.7,2821|6120|7086,GPI|RPE|TKT,-3,MyList
+GO Biological Processes,19,GO:0005975,carbohydrate metabolic process,19_GO:0008152 metabolic process,-5.5,14,8.6,30244,441,29,6,21,7.5,2592|2821|5211|5315|6120|119391,GALT|GPI|PFKL|PKM|RPE|GSTO2,-2.5,MyList
+GO Biological Processes,19,GO:0016052,carbohydrate catabolic process,19_GO:0008152 metabolic process,-5.4,38,12,30244,110,29,4,14,6.4,2592|2821|5211|5315,GALT|GPI|PFKL|PKM,-2.5,MyList
+GO Biological Processes,19,GO:0006520,amino acid metabolic process,19_GO:0008152 metabolic process,-5.2,19,9.2,30244,281,29,5,17,7,275|2571|4141|4677|60496,AMT|GAD1|MARS1|NARS1|AASDHPPT,-2.3,MyList
+GO Biological Processes,19,GO:0019320,hexose catabolic process,19_GO:0008152 metabolic process,-5.1,76,15,30244,41,29,3,10,5.7,2592|5211|5315,GALT|PFKL|PKM,-2.2,MyList
+GO Biological Processes,19,GO:0006096,glycolytic process,19_GO:0008152 metabolic process,-5,71,14,30244,44,29,3,10,5.7,2821|5211|5315,GPI|PFKL|PKM,-2.1,MyList
+WikiPathways,27,WP534,Glycolysis and gluconeogenesis,,-5,70,14,30244,45,29,3,10,5.7,2821|5211|5315,GPI|PFKL|PKM,-2.1,MyList
+GO Biological Processes,19,GO:0055086,nucleobase-containing small molecule metabolic process,19_GO:0008152 metabolic process,-4.9,11,7.6,30244,555,29,6,21,7.5,978|2592|6120|7086|93100|122622,CDA|GALT|RPE|TKT|NAPRT|ADSS1,-2.1,MyList
+CORUM,33,CORUM:324,"39S ribosomal subunit, mitochondrial",,-4.9,65,14,30244,48,29,3,10,5.7,28998|29088|124995,MRPL13|MRPL15|MRPL10,-2,MyList
+GO Biological Processes,19,GO:0046365,monosaccharide catabolic process,19_GO:0008152 metabolic process,-4.8,64,14,30244,49,29,3,10,5.7,2592|5211|5315,GALT|PFKL|PKM,-2,MyList
+GO Biological Processes,19,GO:0019318,hexose metabolic process,19_GO:0008152 metabolic process,-4.8,26,9.9,30244,159,29,4,14,6.4,2592|2821|5211|5315,GALT|GPI|PFKL|PKM,-2,MyList
+GO Biological Processes,19,GO:0006749,glutathione metabolic process,19_GO:0008152 metabolic process,-4.6,55,13,30244,57,29,3,10,5.7,3029|6648|119391,HAGH|SOD2|GSTO2,-1.8,MyList
+KEGG Pathway,24,hsa00010,Glycolysis / Gluconeogenesis,,-4.4,47,12,30244,67,29,3,10,5.7,2821|5211|5315,GPI|PFKL|PKM,-1.6,MyList
+WikiPathways,27,WP2525,"Trans-sulfuration, one-carbon metabolism and related pathways",,-4.4,46,12,30244,68,29,3,10,5.7,275|2571|6648,AMT|GAD1|SOD2,-1.6,MyList
+GO Biological Processes,19,GO:0006090,pyruvate metabolic process,19_GO:0008152 metabolic process,-4.4,45,11,30244,69,29,3,10,5.7,2821|5211|5315,GPI|PFKL|PKM,-1.6,MyList
+GO Biological Processes,19,GO:0046496,nicotinamide nucleotide metabolic process,19_GO:0008152 metabolic process,-4.4,44,11,30244,71,29,3,10,5.7,6120|7086|93100,RPE|TKT|NAPRT,-1.6,MyList
+GO Biological Processes,19,GO:0019362,pyridine nucleotide metabolic process,19_GO:0008152 metabolic process,-4.4,44,11,30244,71,29,3,10,5.7,6120|7086|93100,RPE|TKT|NAPRT,-1.6,MyList
+Reactome Gene Sets,6,R-HSA-70171,Glycolysis,,-4.3,43,11,30244,73,29,3,10,5.7,2821|5211|5315,GPI|PFKL|PKM,-1.6,MyList
+GO Biological Processes,19,GO:0072524,pyridine-containing compound metabolic process,19_GO:0008152 metabolic process,-4.2,40,11,30244,78,29,3,10,5.7,6120|7086|93100,RPE|TKT|NAPRT,-1.5,MyList
+GO Biological Processes,19,GO:0044283,small molecule biosynthetic process,19_GO:0008152 metabolic process,-4.2,11,7,30244,456,29,5,17,7,2571|2821|3422|27349|60496,GAD1|GPI|IDI1|MCAT|AASDHPPT,-1.5,MyList
+GO Biological Processes,19,GO:0016054,organic acid catabolic process,19_GO:0008152 metabolic process,-4.1,18,8,30244,234,29,4,14,6.4,275|2571|27349|60496,AMT|GAD1|MCAT|AASDHPPT,-1.5,MyList
+GO Biological Processes,19,GO:0046395,carboxylic acid catabolic process,19_GO:0008152 metabolic process,-4.1,18,8,30244,234,29,4,14,6.4,275|2571|27349|60496,AMT|GAD1|MCAT|AASDHPPT,-1.5,MyList
+WikiPathways,27,WP4018,Clear cell renal cell carcinoma pathways,,-4.1,36,10,30244,86,29,3,10,5.7,2821|5211|5315,GPI|PFKL|PKM,-1.4,MyList
+GO Biological Processes,19,GO:0009117,nucleotide metabolic process,19_GO:0008152 metabolic process,-4.1,11,6.8,30244,478,29,5,17,7,978|6120|7086|93100|122622,CDA|RPE|TKT|NAPRT|ADSS1,-1.4,MyList
+Reactome Gene Sets,6,R-HSA-6798695,Neutrophil degranulation,,-4.1,11,6.7,30244,481,29,5,17,7,978|2821|5211|5315|93100,CDA|GPI|PFKL|PKM|NAPRT,-1.4,MyList
+GO Biological Processes,19,GO:0006753,nucleoside phosphate metabolic process,19_GO:0008152 metabolic process,-4,11,6.7,30244,487,29,5,17,7,978|6120|7086|93100|122622,CDA|RPE|TKT|NAPRT|ADSS1,-1.4,MyList
+Reactome Gene Sets,6,R-HSA-70326,Glucose metabolism,,-4,34,9.8,30244,93,29,3,10,5.7,2821|5211|5315,GPI|PFKL|PKM,-1.4,MyList
+GO Biological Processes,19,GO:0090407,organophosphate biosynthetic process,19_GO:0008152 metabolic process,-3.8,9.6,6.3,30244,541,29,5,17,7,978|3422|7086|93100|122622,CDA|IDI1|TKT|NAPRT|ADSS1,-1.2,MyList
+GO Biological Processes,19,GO:0006006,glucose metabolic process,19_GO:0008152 metabolic process,-3.7,27,8.6,30244,118,29,3,10,5.7,2821|5211|5315,GPI|PFKL|PKM,-1.1,MyList
+Reactome Gene Sets,6,R-HSA-196849,Metabolism of water-soluble vitamins and cofactors,,-3.6,25,8.4,30244,124,29,3,10,5.7,60496|93100|119391,AASDHPPT|NAPRT|GSTO2,-1,MyList
+GO Biological Processes,19,GO:0006163,purine nucleotide metabolic process,19_GO:0008152 metabolic process,-3.2,9.9,5.7,30244,420,29,4,14,6.4,6120|7086|93100|122622,RPE|TKT|NAPRT|ADSS1,-0.56,MyList
+Reactome Gene Sets,6,R-HSA-196854,Metabolism of vitamins and cofactors,,-3.1,16,6.6,30244,191,29,3,10,5.7,60496|93100|119391,AASDHPPT|NAPRT|GSTO2,-0.49,MyList
+GO Biological Processes,19,GO:0072521,purine-containing compound metabolic process,19_GO:0008152 metabolic process,-3.1,9.3,5.5,30244,450,29,4,14,6.4,6120|7086|93100|122622,RPE|TKT|NAPRT|ADSS1,-0.47,MyList
+GO Biological Processes,19,GO:1901605,alpha-amino acid metabolic process,19_GO:0008152 metabolic process,-3.1,16,6.5,30244,198,29,3,10,5.7,275|2571|60496,AMT|GAD1|AASDHPPT,-0.46,MyList
+GO Biological Processes,19,GO:0046390,ribose phosphate biosynthetic process,19_GO:0008152 metabolic process,-2.9,15,6.2,30244,215,29,3,10,5.7,978|7086|122622,CDA|TKT|ADSS1,-0.36,MyList
+GO Biological Processes,19,GO:0009165,nucleotide biosynthetic process,19_GO:0008152 metabolic process,-2.7,12,5.5,30244,263,29,3,10,5.7,978|93100|122622,CDA|NAPRT|ADSS1,-0.12,MyList
+GO Biological Processes,19,GO:1901293,nucleoside phosphate biosynthetic process,19_GO:0008152 metabolic process,-2.7,12,5.5,30244,265,29,3,10,5.7,978|93100|122622,CDA|NAPRT|ADSS1,-0.12,MyList
+GO Biological Processes,19,GO:0046394,carboxylic acid biosynthetic process,19_GO:0008152 metabolic process,-2.6,11,5.4,30244,274,29,3,10,5.7,2571|27349|60496,GAD1|MCAT|AASDHPPT,-0.083,MyList
+GO Biological Processes,19,GO:0016053,organic acid biosynthetic process,19_GO:0008152 metabolic process,-2.6,11,5.3,30244,277,29,3,10,5.7,2571|27349|60496,GAD1|MCAT|AASDHPPT,-0.077,MyList
+GO Biological Processes,19,GO:0019693,ribose phosphate metabolic process,19_GO:0008152 metabolic process,-2.3,8.5,4.5,30244,369,29,3,10,5.7,978|7086|122622,CDA|TKT|ADSS1,0,MyList
+GO Biological Processes,19,GO:0006091,generation of precursor metabolites and energy,19_GO:0008152 metabolic process,-2.3,8.4,4.5,30244,372,29,3,10,5.7,6120|6648|7086,RPE|SOD2|TKT,0,MyList

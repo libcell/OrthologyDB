@@ -1,0 +1,65 @@
+_MEMBER_MyList,_LogP_MyList,GO,Description,_PATTERN_,_RANK_,GiniIndex
+1,-6.3,hsa03010,Ribosome,M1,1,0
+1,-2.6,GO:0046394,carboxylic acid biosynthetic process,M1,1,0
+1,-3.6,R-HSA-196849,Metabolism of water-soluble vitamins and cofactors,M1,1,0
+1,-3.2,GO:0006163,purine nucleotide metabolic process,M1,1,0
+1,-4.4,GO:0019362,pyridine nucleotide metabolic process,M1,1,0
+1,-2.7,GO:0009165,nucleotide biosynthetic process,M1,1,0
+1,-7.7,R-HSA-5389840,Mitochondrial translation elongation,M1,1,0
+1,-6.6,GO:0140053,mitochondrial gene expression,M1,1,0
+1,-4.1,GO:0016054,organic acid catabolic process,M1,1,0
+1,-11,GO:0043043,peptide biosynthetic process,M1,1,0
+1,-4.2,GO:0072524,pyridine-containing compound metabolic process,M1,1,0
+1,-4.8,GO:0046365,monosaccharide catabolic process,M1,1,0
+1,-3.1,GO:0072521,purine-containing compound metabolic process,M1,1,0
+1,-3.8,GO:0090407,organophosphate biosynthetic process,M1,1,0
+1,-6.4,GO:0032787,monocarboxylic acid metabolic process,M1,1,0
+1,-7.1,WP4290,Metabolic reprogramming in colon cancer,M1,1,0
+1,-4.3,R-HSA-70171,Glycolysis,M1,1,0
+1,-5,WP534,Glycolysis and gluconeogenesis,M1,1,0
+1,-4.1,WP4018,Clear cell renal cell carcinoma pathways,M1,1,0
+1,-5,GO:0006096,glycolytic process,M1,1,0
+1,-4.1,GO:0009117,nucleotide metabolic process,M1,1,0
+1,-8,CORUM:320,"55S ribosome, mitochondrial",M1,1,0
+1,-5.5,GO:0005975,carbohydrate metabolic process,M1,1,0
+1,-4.4,GO:0006090,pyruvate metabolic process,M1,1,0
+1,-11,GO:0044282,small molecule catabolic process,M1,1,0
+1,-6.1,hsa01230,Biosynthesis of amino acids,M1,1,0
+1,-2.6,GO:0016053,organic acid biosynthetic process,M1,1,0
+1,-5.9,GO:0051156,glucose 6-phosphate metabolic process,M1,1,0
+1,-5.1,GO:0019320,hexose catabolic process,M1,1,0
+1,-9.5,R-HSA-5368287,Mitochondrial translation,M1,1,0
+1,-7.7,hsa00030,Pentose phosphate pathway,M1,1,0
+1,-4.2,GO:0044283,small molecule biosynthetic process,M1,1,0
+1,-2.7,GO:1901293,nucleoside phosphate biosynthetic process,M1,1,0
+1,-4,R-HSA-70326,Glucose metabolism,M1,1,0
+1,-9.6,R-HSA-72766,Translation,M1,1,0
+1,-9.7,R-HSA-5419276,Mitochondrial translation termination,M1,1,0
+1,-4.8,GO:0019318,hexose metabolic process,M1,1,0
+1,-4.4,WP2525,"Trans-sulfuration, one-carbon metabolism and related pathways",M1,1,0
+1,-4.4,GO:0046496,nicotinamide nucleotide metabolic process,M1,1,0
+1,-3.1,GO:1901605,alpha-amino acid metabolic process,M1,1,0
+1,-2.3,GO:0006091,generation of precursor metabolites and energy,M1,1,0
+1,-5.4,GO:0016052,carbohydrate catabolic process,M1,1,0
+1,-6,GO:0005996,monosaccharide metabolic process,M1,1,0
+1,-4.1,R-HSA-6798695,Neutrophil degranulation,M1,1,0
+1,-10,GO:0043604,amide biosynthetic process,M1,1,0
+1,-11,GO:0043603,amide metabolic process,M1,1,0
+1,-7.1,WP5220,Metabolic reprogramming in pancreatic cancer,M1,1,0
+1,-4.4,hsa00010,Glycolysis / Gluconeogenesis,M1,1,0
+1,-3.1,R-HSA-196854,Metabolism of vitamins and cofactors,M1,1,0
+1,-4.6,GO:0006749,glutathione metabolic process,M1,1,0
+1,-2.3,GO:0019693,ribose phosphate metabolic process,M1,1,0
+1,-11,GO:0006518,peptide metabolic process,M1,1,0
+1,-4.9,CORUM:324,"39S ribosomal subunit, mitochondrial",M1,1,0
+1,-5.2,GO:0006520,amino acid metabolic process,M1,1,0
+1,-4.9,GO:0055086,nucleobase-containing small molecule metabolic process,M1,1,0
+1,-8.9,hsa01200,Carbon metabolism,M1,1,0
+1,-2.9,GO:0046390,ribose phosphate biosynthetic process,M1,1,0
+1,-6.5,R-HSA-71387,Metabolism of carbohydrates,M1,1,0
+1,-7.2,GO:0032543,mitochondrial translation,M1,1,0
+1,-4,GO:0006753,nucleoside phosphate metabolic process,M1,1,0
+1,-7.7,R-HSA-5368286,Mitochondrial translation initiation,M1,1,0
+1,-3.7,GO:0006006,glucose metabolic process,M1,1,0
+1,-10,GO:0006412,translation,M1,1,0
+1,-4.1,GO:0046395,carboxylic acid catabolic process,M1,1,0

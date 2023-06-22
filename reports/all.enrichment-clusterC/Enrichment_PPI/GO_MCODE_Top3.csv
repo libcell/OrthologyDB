@@ -1,0 +1,5 @@
+Network,Annotation
+MyList,GO:0032543|mitochondrial translation|-25.8;GO:0006520|amino acid metabolic process|-24.2;GO:0043603|amide metabolic process|-24.0
+MyList_MCODE_ALL,"CORUM:320|55S ribosome, mitochondrial|-21.6;R-HSA-5368286|Mitochondrial translation initiation|-21.0;R-HSA-5419276|Mitochondrial translation termination|-21.0"
+MyList_SUB1_MCODE_1,"CORUM:320|55S ribosome, mitochondrial|-25.2;R-HSA-5368286|Mitochondrial translation initiation|-24.6;R-HSA-5419276|Mitochondrial translation termination|-24.6"
+MyList_SUB1_MCODE_2,hsa01200|Carbon metabolism|-5.7;GO:0055086|nucleobase-containing small molecule metabolic process|-5.4;GO:1901137|carbohydrate derivative biosynthetic process|-5.3

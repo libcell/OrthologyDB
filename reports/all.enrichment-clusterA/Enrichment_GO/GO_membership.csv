@@ -1,0 +1,262 @@
+_MEMBER_MyList,_LogP_MyList,GO,Description,_PATTERN_,_RANK_,GiniIndex
+1,-2.9,GO:0009410,response to xenobiotic stimulus,M1,1,0
+1,-6.4,hsa00270,Cysteine and methionine metabolism,M1,1,0
+1,-4.6,GO:0061620,glycolytic process through glucose-6-phosphate,M1,1,0
+1,-5.1,R-HSA-8956320,Nucleotide biosynthesis,M1,1,0
+1,-13,GO:0005996,monosaccharide metabolic process,M1,1,0
+1,-23,R-HSA-72766,Translation,M1,1,0
+1,-14,GO:0015980,energy derivation by oxidation of organic compounds,M1,1,0
+1,-10,GO:0044283,small molecule biosynthetic process,M1,1,0
+1,-6.5,GO:0009168,purine ribonucleoside monophosphate biosynthetic process,M1,1,0
+1,-7.1,GO:0009152,purine ribonucleotide biosynthetic process,M1,1,0
+1,-7.4,WP4792,Purine metabolism,M1,1,0
+1,-6.2,R-HSA-379716,Cytosolic tRNA aminoacylation,M1,1,0
+1,-5.2,GO:0106074,aminoacyl-tRNA metabolism involved in translational fidelity,M1,1,0
+1,-6.9,GO:0019320,hexose catabolic process,M1,1,0
+1,-2.6,R-HSA-6798695,Neutrophil degranulation,M1,1,0
+1,-6,R-HSA-8982491,Glycogen metabolism,M1,1,0
+1,-2.4,GO:0097237,cellular response to toxic substance,M1,1,0
+1,-13,R-HSA-71387,Metabolism of carbohydrates,M1,1,0
+1,-2.2,GO:0006605,protein targeting,M1,1,0
+1,-4.1,GO:0006084,acetyl-CoA metabolic process,M1,1,0
+1,-22,GO:0006520,amino acid metabolic process,M1,1,0
+1,-2.9,R-HSA-9609507,Protein localization,M1,1,0
+1,-7.3,GO:0009150,purine ribonucleotide metabolic process,M1,1,0
+1,-4.8,GO:0061621,canonical glycolysis,M1,1,0
+1,-3.3,GO:0006220,pyrimidine nucleotide metabolic process,M1,1,0
+1,-3.8,hsa00250,"Alanine, aspartate and glutamate metabolism",M1,1,0
+1,-5.6,GO:0009156,ribonucleoside monophosphate biosynthetic process,M1,1,0
+1,-6.6,hsa00620,Pyruvate metabolism,M1,1,0
+1,-6.5,R-HSA-379726,Mitochondrial tRNA aminoacylation,M1,1,0
+1,-5.2,WP5173,Disorders of galactose metabolism,M1,1,0
+1,-5.1,GO:0006085,acetyl-CoA biosynthetic process,M1,1,0
+1,-5.1,GO:1901615,organic hydroxy compound metabolic process,M1,1,0
+1,-3.4,GO:0005977,glycogen metabolic process,M1,1,0
+1,-3.8,GO:0046164,alcohol catabolic process,M1,1,0
+1,-5.2,GO:0006098,pentose-phosphate shunt,M1,1,0
+1,-3.5,GO:0007005,mitochondrion organization,M1,1,0
+1,-5.4,GO:0044272,sulfur compound biosynthetic process,M1,1,0
+1,-2.8,GO:0072527,pyrimidine-containing compound metabolic process,M1,1,0
+1,-2.4,GO:0090150,establishment of protein localization to membrane,M1,1,0
+1,-5.6,GO:0006099,tricarboxylic acid cycle,M1,1,0
+1,-11,WP3925,Amino acid metabolism,M1,1,0
+1,-4.6,GO:0006144,purine nucleobase metabolic process,M1,1,0
+1,-3.5,CORUM:324,"39S ribosomal subunit, mitochondrial",M1,1,0
+1,-5.3,WP500,Glycogen synthesis and degradation,M1,1,0
+1,-8.8,GO:0072522,purine-containing compound biosynthetic process,M1,1,0
+1,-4.5,GO:0009070,serine family amino acid biosynthetic process,M1,1,0
+1,-3.9,GO:0035383,thioester metabolic process,M1,1,0
+1,-6.9,GO:0009167,purine ribonucleoside monophosphate metabolic process,M1,1,0
+1,-14,GO:0009165,nucleotide biosynthetic process,M1,1,0
+1,-5.3,WP4629,Aerobic glycolysis,M1,1,0
+1,-2.6,R-HSA-9711123,Cellular response to chemical stress,M1,1,0
+1,-17,GO:0006518,peptide metabolic process,M1,1,0
+1,-4.5,GO:0051156,glucose 6-phosphate metabolic process,M1,1,0
+1,-2.4,R-HSA-9748784,Drug ADME,M1,1,0
+1,-2.3,GO:0022904,respiratory electron transport chain,M1,1,0
+1,-12,CORUM:320,"55S ribosome, mitochondrial",M1,1,0
+1,-5.2,GO:0071616,acyl-CoA biosynthetic process,M1,1,0
+1,-20,GO:0043603,amide metabolic process,M1,1,0
+1,-3.9,GO:0009141,nucleoside triphosphate metabolic process,M1,1,0
+1,-6.6,GO:0006094,gluconeogenesis,M1,1,0
+1,-5,R-HSA-71336,Pentose phosphate pathway,M1,1,0
+1,-4.8,GO:0034030,ribonucleoside bisphosphate biosynthetic process,M1,1,0
+1,-13,GO:0044282,small molecule catabolic process,M1,1,0
+1,-7.9,GO:0046037,GMP metabolic process,M1,1,0
+1,-7.9,GO:0046390,ribose phosphate biosynthetic process,M1,1,0
+1,-4.8,GO:0046040,IMP metabolic process,M1,1,0
+1,-2.1,GO:0046394,carboxylic acid biosynthetic process,M1,1,0
+1,-6.1,GO:0009161,ribonucleoside monophosphate metabolic process,M1,1,0
+1,-6.8,GO:0009126,purine nucleoside monophosphate metabolic process,M1,1,0
+1,-5.8,WP2525,"Trans-sulfuration, one-carbon metabolism and related pathways",M1,1,0
+1,-5.5,GO:0072524,pyridine-containing compound metabolic process,M1,1,0
+1,-17,R-HSA-5419276,Mitochondrial translation termination,M1,1,0
+1,-5.4,R-HSA-73817,Purine ribonucleoside monophosphate biosynthesis,M1,1,0
+1,-4.6,GO:0042026,protein refolding,M1,1,0
+1,-3.4,R-HSA-211859,Biological oxidations,M1,1,0
+1,-2.4,R-HSA-9755511,KEAP1-NFE2L2 pathway,M1,1,0
+1,-5.7,WP5312,Metabolic pathways of fibroblasts,M1,1,0
+1,-15,R-HSA-5368286,Mitochondrial translation initiation,M1,1,0
+1,-5.5,GO:0006739,NADP metabolic process,M1,1,0
+1,-19,GO:0140053,mitochondrial gene expression,M1,1,0
+1,-3.6,GO:0009394,2'-deoxyribonucleotide metabolic process,M1,1,0
+1,-2.4,R-HSA-156580,Phase II - Conjugation of compounds,M1,1,0
+1,-3.9,hsa00040,Pentose and glucuronate interconversions,M1,1,0
+1,-22,GO:0006091,generation of precursor metabolites and energy,M1,1,0
+1,-17,GO:0006753,nucleoside phosphate metabolic process,M1,1,0
+1,-4.2,GO:0008652,amino acid biosynthetic process,M1,1,0
+1,-8.5,hsa00230,Purine metabolism,M1,1,0
+1,-3.5,GO:0072329,monocarboxylic acid catabolic process,M1,1,0
+1,-7.7,GO:0009060,aerobic respiration,M1,1,0
+1,-4.4,M255,PID HIF1 TFPATHWAY,M1,1,0
+1,-8.1,GO:0009260,ribonucleotide biosynthetic process,M1,1,0
+1,-2.9,GO:0006839,mitochondrial transport,M1,1,0
+1,-4.8,GO:0061718,glucose catabolic process to pyruvate,M1,1,0
+1,-2.1,R-HSA-2262752,Cellular responses to stress,M1,1,0
+1,-9.2,WP2453,TCA cycle and deficiency of pyruvate dehydrogenase complex (PDHc),M1,1,0
+1,-5.1,GO:0006096,glycolytic process,M1,1,0
+1,-5,GO:0009263,deoxyribonucleotide biosynthetic process,M1,1,0
+1,-4.4,GO:1901607,alpha-amino acid biosynthetic process,M1,1,0
+1,-9.7,CORUM:315,"28S ribosomal subunit, mitochondrial",M1,1,0
+1,-4.4,GO:0006007,glucose catabolic process,M1,1,0
+1,-7.7,R-HSA-499943,Interconversion of nucleotide di- and triphosphates,M1,1,0
+1,-2,GO:0009199,ribonucleoside triphosphate metabolic process,M1,1,0
+1,-2.1,WP3888,VEGFA-VEGFR2 signaling,M1,1,0
+1,-17,GO:0009117,nucleotide metabolic process,M1,1,0
+1,-2.6,GO:0043648,dicarboxylic acid metabolic process,M1,1,0
+1,-4.3,GO:0046496,nicotinamide nucleotide metabolic process,M1,1,0
+1,-5.3,GO:0046395,carboxylic acid catabolic process,M1,1,0
+1,-4.3,GO:0009064,glutamine family amino acid metabolic process,M1,1,0
+1,-5.8,hsa00630,Glyoxylate and dicarboxylate metabolism,M1,1,0
+1,-3.9,GO:0090151,establishment of protein localization to mitochondrial membrane,M1,1,0
+1,-2.1,R-HSA-3781865,Diseases of glycosylation,M1,1,0
+1,-3.8,GO:0006400,tRNA modification,M1,1,0
+1,-3.1,R-HSA-1268020,Mitochondrial protein import,M1,1,0
+1,-8.8,GO:0006006,glucose metabolic process,M1,1,0
+1,-4.8,GO:0034033,purine nucleoside bisphosphate biosynthetic process,M1,1,0
+1,-11,GO:0006163,purine nucleotide metabolic process,M1,1,0
+1,-3.8,GO:0072528,pyrimidine-containing compound biosynthetic process,M1,1,0
+1,-14,GO:1901293,nucleoside phosphate biosynthetic process,M1,1,0
+1,-3.2,hsa00480,Glutathione metabolism,M1,1,0
+1,-14,GO:0006399,tRNA metabolic process,M1,1,0
+1,-11,hsa00970,Aminoacyl-tRNA biosynthesis,M1,1,0
+1,-5.4,GO:0006188,IMP biosynthetic process,M1,1,0
+1,-5.6,GO:0009113,purine nucleobase biosynthetic process,M1,1,0
+1,-7.7,hsa00030,Pentose phosphate pathway,M1,1,0
+1,-3.3,GO:0009409,response to cold,M1,1,0
+1,-4.1,WP241,One-carbon metabolism,M1,1,0
+1,-12,GO:1901137,carbohydrate derivative biosynthetic process,M1,1,0
+1,-20,GO:0055086,nucleobase-containing small molecule metabolic process,M1,1,0
+1,-5.3,GO:0016054,organic acid catabolic process,M1,1,0
+1,-3.3,R-HSA-71406,Pyruvate metabolism and Citric Acid (TCA) cycle,M1,1,0
+1,-4.5,WP3580,Methionine de novo and salvage pathway,M1,1,0
+1,-5.4,GO:0006002,fructose 6-phosphate metabolic process,M1,1,0
+1,-5.5,R-HSA-70263,Gluconeogenesis,M1,1,0
+1,-3.7,R-HSA-196854,Metabolism of vitamins and cofactors,M1,1,0
+1,-2.4,GO:0009063,amino acid catabolic process,M1,1,0
+1,-18,GO:0043043,peptide biosynthetic process,M1,1,0
+1,-6.9,GO:0009124,nucleoside monophosphate biosynthetic process,M1,1,0
+1,-4.7,hsa01210,2-Oxocarboxylic acid metabolism,M1,1,0
+1,-3.1,GO:0006626,protein targeting to mitochondrion,M1,1,0
+1,-2.4,GO:0006457,protein folding,M1,1,0
+1,-8.5,WP534,Glycolysis and gluconeogenesis,M1,1,0
+1,-2.6,GO:0019751,polyol metabolic process,M1,1,0
+1,-2.4,GO:1990748,cellular detoxification,M1,1,0
+1,-12,WP4290,Metabolic reprogramming in colon cancer,M1,1,0
+1,-5.4,hsa01250,Biosynthesis of nucleotide sugars,M1,1,0
+1,-8.3,WP4018,Clear cell renal cell carcinoma pathways,M1,1,0
+1,-6.1,GO:0006541,glutamine metabolic process,M1,1,0
+1,-4.4,GO:0006066,alcohol metabolic process,M1,1,0
+1,-8.2,GO:0009259,ribonucleotide metabolic process,M1,1,0
+1,-8.4,WP4224,Purine metabolism and related disorders,M1,1,0
+1,-8.3,GO:0046365,monosaccharide catabolic process,M1,1,0
+1,-5.6,GO:0009112,nucleobase metabolic process,M1,1,0
+1,-3.4,GO:0007006,mitochondrial membrane organization,M1,1,0
+1,-6.2,R-HSA-5668914,Diseases of metabolism,M1,1,0
+1,-5.5,M66,PID MYC ACTIV PATHWAY,M1,1,0
+1,-3.4,GO:0034032,purine nucleoside bisphosphate metabolic process,M1,1,0
+1,-9.1,GO:0019318,hexose metabolic process,M1,1,0
+1,-14,GO:0016052,carbohydrate catabolic process,M1,1,0
+1,-3.5,GO:0009142,nucleoside triphosphate biosynthetic process,M1,1,0
+1,-8.1,GO:0019319,hexose biosynthetic process,M1,1,0
+1,-6.1,GO:0019405,alditol catabolic process,M1,1,0
+1,-4.8,WP1946,Cori cycle,M1,1,0
+1,-4.7,GO:0070525,tRNA threonylcarbamoyladenosine metabolic process,M1,1,0
+1,-3.6,GO:0009262,deoxyribonucleotide metabolic process,M1,1,0
+1,-4.9,GO:0006740,NADPH regeneration,M1,1,0
+1,-13,GO:0006418,tRNA aminoacylation for protein translation,M1,1,0
+1,-7.4,WP143,Fatty acid beta-oxidation,M1,1,0
+1,-2.9,R-HSA-9824439,Bacterial Infection Pathways,M1,1,0
+1,-12,GO:0072521,purine-containing compound metabolic process,M1,1,0
+1,-8.9,hsa03010,Ribosome,M1,1,0
+1,-13,R-HSA-5389840,Mitochondrial translation elongation,M1,1,0
+1,-2.8,GO:0009451,RNA modification,M1,1,0
+1,-12,GO:0043039,tRNA aminoacylation,M1,1,0
+1,-5.7,hsa00052,Galactose metabolism,M1,1,0
+1,-5.2,GO:0006563,L-serine metabolic process,M1,1,0
+1,-5,GO:0009265,2'-deoxyribonucleotide biosynthetic process,M1,1,0
+1,-4.6,GO:0061615,glycolytic process through fructose-6-phosphate,M1,1,0
+1,-5.1,GO:0006167,AMP biosynthetic process,M1,1,0
+1,-19,GO:0006412,translation,M1,1,0
+1,-2.8,hsa03018,RNA degradation,M1,1,0
+1,-7.7,GO:0006081,cellular aldehyde metabolic process,M1,1,0
+1,-2.7,GO:0051262,protein tetramerization,M1,1,0
+1,-9.4,GO:0046364,monosaccharide biosynthetic process,M1,1,0
+1,-5.6,GO:0046174,polyol catabolic process,M1,1,0
+1,-3.8,R-HSA-70326,Glucose metabolism,M1,1,0
+1,-7.7,GO:0006790,sulfur compound metabolic process,M1,1,0
+1,-18,hsa01230,Biosynthesis of amino acids,M1,1,0
+1,-7.3,GO:0006090,pyruvate metabolic process,M1,1,0
+1,-5.3,GO:0019321,pentose metabolic process,M1,1,0
+1,-11,R-HSA-379724,tRNA Aminoacylation,M1,1,0
+1,-6.7,GO:0006450,regulation of translational fidelity,M1,1,0
+1,-2.8,R-HSA-1428517,The citric acid (TCA) cycle and respiratory electron transport,M1,1,0
+1,-3.9,GO:0006637,acyl-CoA metabolic process,M1,1,0
+1,-3.9,R-HSA-5663084,Diseases of carbohydrate metabolism,M1,1,0
+1,-4.3,WP5083,Neuroinflammation and glutamatergic signaling,M1,1,0
+1,-11,GO:0032787,monocarboxylic acid metabolic process,M1,1,0
+1,-14,hsa00010,Glycolysis / Gluconeogenesis,M1,1,0
+1,-2.8,R-HSA-9759194,Nuclear events mediated by NFE2L2,M1,1,0
+1,-7.7,hsa00020,Citrate cycle (TCA cycle),M1,1,0
+1,-3,GO:0005976,polysaccharide metabolic process,M1,1,0
+1,-3.7,GO:0034470,ncRNA processing,M1,1,0
+1,-7.2,GO:0006177,GMP biosynthetic process,M1,1,0
+1,-3,GO:0051205,protein insertion into membrane,M1,1,0
+1,-4,GO:0070585,protein localization to mitochondrion,M1,1,0
+1,-4.2,GO:0072655,establishment of protein localization to mitochondrion,M1,1,0
+1,-3.9,GO:0022900,electron transport chain,M1,1,0
+1,-26,hsa01200,Carbon metabolism,M1,1,0
+1,-2.3,GO:0098754,detoxification,M1,1,0
+1,-6.7,GO:0046112,nucleobase biosynthetic process,M1,1,0
+1,-5,R-HSA-5609975,Diseases associated with glycosylation precursor biosynthesis,M1,1,0
+1,-2.6,GO:0034308,primary alcohol metabolic process,M1,1,0
+1,-15,GO:0005975,carbohydrate metabolic process,M1,1,0
+1,-9.9,GO:0016051,carbohydrate biosynthetic process,M1,1,0
+1,-5.3,GO:0009069,serine family amino acid metabolic process,M1,1,0
+1,-5,GO:0046385,deoxyribose phosphate biosynthetic process,M1,1,0
+1,-3.9,hsa00051,Fructose and mannose metabolism,M1,1,0
+1,-4.8,GO:0006735,NADH regeneration,M1,1,0
+1,-2.1,GO:0016053,organic acid biosynthetic process,M1,1,0
+1,-10,GO:0009123,nucleoside monophosphate metabolic process,M1,1,0
+1,-17,GO:0032543,mitochondrial translation,M1,1,0
+1,-5.2,WP5220,Metabolic reprogramming in pancreatic cancer,M1,1,0
+1,-4.9,hsa00520,Amino sugar and nucleotide sugar metabolism,M1,1,0
+1,-9.2,GO:0019693,ribose phosphate metabolic process,M1,1,0
+1,-4.5,GO:0019400,alditol metabolic process,M1,1,0
+1,-16,GO:0090407,organophosphate biosynthetic process,M1,1,0
+1,-5.1,R-HSA-3322077,Glycogen synthesis,M1,1,0
+1,-2.4,GO:0009636,response to toxic substance,M1,1,0
+1,-5.2,GO:0035384,thioester biosynthetic process,M1,1,0
+1,-4.8,GO:0033866,nucleoside bisphosphate biosynthetic process,M1,1,0
+1,-3.2,GO:1901616,organic hydroxy compound catabolic process,M1,1,0
+1,-4.4,GO:0006112,energy reserve metabolic process,M1,1,0
+1,-7.7,GO:0006164,purine nucleotide biosynthetic process,M1,1,0
+1,-9.9,hsa01232,Nucleotide metabolism,M1,1,0
+1,-2.6,R-HSA-1592230,Mitochondrial biogenesis,M1,1,0
+1,-12,GO:0043038,amino acid activation,M1,1,0
+1,-2.9,GO:0006970,response to osmotic stress,M1,1,0
+1,-14,hsa01240,Biosynthesis of cofactors,M1,1,0
+1,-2.5,GO:0072594,establishment of protein localization to organelle,M1,1,0
+1,-9.6,GO:1901605,alpha-amino acid metabolic process,M1,1,0
+1,-4.3,GO:0046033,AMP metabolic process,M1,1,0
+1,-6.1,WP134,Pentose phosphate metabolism,M1,1,0
+1,-13,R-HSA-15869,Metabolism of nucleotides,M1,1,0
+1,-4,GO:0006221,pyrimidine nucleotide biosynthetic process,M1,1,0
+1,-3.3,GO:0044042,glucan metabolic process,M1,1,0
+1,-21,GO:0043604,amide biosynthetic process,M1,1,0
+1,-9.6,GO:0034660,ncRNA metabolic process,M1,1,0
+1,-4.3,GO:0019362,pyridine nucleotide metabolic process,M1,1,0
+1,-5.5,hsa00500,Starch and sucrose metabolism,M1,1,0
+1,-3.4,GO:0033865,nucleoside bisphosphate metabolic process,M1,1,0
+1,-3.4,GO:0033875,ribonucleoside bisphosphate metabolic process,M1,1,0
+1,-2.3,R-HSA-196849,Metabolism of water-soluble vitamins and cofactors,M1,1,0
+1,-7.2,WP5178,Disorders of fructose metabolism,M1,1,0
+1,-5.9,WP4688,Serine metabolism,M1,1,0
+1,-9.6,GO:0045333,cellular respiration,M1,1,0
+1,-5.6,GO:0008033,tRNA processing,M1,1,0
+1,-6.4,GO:0009127,purine nucleoside monophosphate biosynthetic process,M1,1,0
+1,-3.6,GO:0019692,deoxyribose phosphate metabolic process,M1,1,0
+1,-2.9,R-HSA-70171,Glycolysis,M1,1,0
+1,-6.9,R-HSA-71291,Metabolism of amino acids and derivatives,M1,1,0
+1,-5.3,hsa00260,"Glycine, serine and threonine metabolism",M1,1,0
+1,-18,R-HSA-5368287,Mitochondrial translation,M1,1,0
