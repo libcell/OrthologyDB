@@ -411,5 +411,6 @@ head(gene.info)
 
 kid.sym <- openxlsx::read.xlsx("./data/Common_orthologs.xlsx", sheet = "All") [, 1]
 kid.sym
+
 ### End of Step-02.
 ### ------------------------------------------------------------------------ ###
